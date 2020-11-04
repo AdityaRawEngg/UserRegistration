@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="" method="">
+        <fieldset class="common">
+            <legend>User Details</legend>
+        <label class="common" for="username">Name :</label>
+        <input class="common" type="text" name="username" id="username"> 
+        <label class="common" for="password">password :</label>
+        <input class="common" type="password" name="password" id="password"> 
+        <label class="common" for="cpassword">Confirm password :</label>
+        <input class="common" type="password" name="cpassword" id="cpassword"> 
+        <label class="common" for="email"> Email :</label>
+        <input class="common" type="email" name="email" id="email"> 
+        <label class="common" for="phone">Phone Number :</label>
+        <input class="common" type="number" name="phone" id="phone"> 
+        <label class="common" for="branch">Branch :</label>
+        <select class="common" name="branch" id="branch">
+            <option value="it">IT</option>
+            <option value="mech">Mech</option>
+            <option value="civil">Civil</option>
+            <option value="extc">Extc</option>
+        </select>
+    </fieldset>
+    <fieldset class="common">
+        <legend>Area of Interest</legend>
+          
+        <label class="common" for="">Interested Area : </label> 
+        <input class="common" type="checkbox" name="interest" id="" value="java">Java
+        <input class="common" type="checkbox" name="interest" id="" value="python">Python
+        <input class="common" type="checkbox" name="interest" id="" value="JS">JavaScript
+        <input class="common" type="checkbox" name="interest" id="" value="mobile">Mobile App
+          
+    </fieldset>
+    <fieldset class="common">
+        <legend>Couser Details</legend>
+        <label class="common" for="">Your planing to enroll with :</label> 
+        <input class="common" type="checkbox" name="course" id=""> Java
+        <input class="common" type="checkbox" name="course" id=""> JavaScript
+        <input class="common" type="checkbox" name="course" id=""> Python
+        <input class="common" type="checkbox" name="course" id=""> Mobile App
+        <input class="common" type="checkbox" name="course" id=""> Soft Skills development
+        <input class="common" type="checkbox" name="course" id=""> Interview Training
+         <label class="common" for="">Select any batch :</label>
+        <input class="common" type="radio" name="time" id="time">January - April
+        <input class="common" type="radio" name="time" id="time">May - August
+        <input class="common" type="radio" name="time" id="time">September - December
+    </fieldset>
+        <button class="common" type="submit">Submit</button>
+        <button class="common" type="reset">Clear all</button>
+    </form>
+</body>
+</html>
