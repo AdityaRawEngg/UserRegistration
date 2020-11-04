@@ -8,7 +8,7 @@ In Registration form user can add:
   * Number of Courses user wants to apply
   * Batch in which he wants to join
   
-Demo of The Project 
+Demo of The Project https://adityarawengg.github.io/UserRegistration/ 
 
 
 
