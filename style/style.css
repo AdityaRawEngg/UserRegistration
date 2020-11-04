@@ -1,0 +1,13 @@
+.common{
+    margin-top: 20px;
+    
+
+}
+label{
+    font: bold;
+    display: block;
+    
+}
+input{
+    margin-left: 40px;
+}
