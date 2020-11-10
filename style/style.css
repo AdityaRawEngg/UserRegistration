@@ -1,13 +1,26 @@
-.common{
-    margin-top: 20px;
-    
+.form-div{
+    width: 50%;
+    margin: 30vh auto;
+}
 
+.form-content{
+    display: flex;
 }
-label{
-    font: bold;
-    display: block;
-    
+
+.form-text{
+    width: 40%;
+    margin-top: 5%;
 }
-input{
-    margin-left: 40px;
+.form-input{
+    width: 40%;
+    margin-top: 5%;
+}
+
+.form-button{
+    text-align: center;
+    margin: 5% auto;
+}
+
+.form-button button{
+    margin-left: 5%;
 }
