@@ -28,14 +28,14 @@ body{
     margin-right: 20px;
 }
 
-.nav-container a{
+.nav-link{
     color:  white;
     background-color: transparent;
     text-decoration: none;
     
   }
 
-.nav-container a:hover{
+.nav-link:hover{
     border-bottom: 1px solid rgb(241, 211, 255);
 }
 .logo{
