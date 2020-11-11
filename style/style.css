@@ -1,26 +1,156 @@
-.form-div{
+body{
+    background: url('../resource/image/background.jpg');
+    color: rgb(241, 211, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container{
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-bar{
+    width: 80%;
+    display: flex;
+    justify-content: right;
+
+}
+.nav-item{
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-container a{
+    color:  white;
+    background-color: transparent;
+    text-decoration: none;
+    
+  }
+
+.nav-container a:hover{
+    border-bottom: 1px solid rgb(241, 211, 255);
+}
+.logo{
+    width: 8%;
+    text-align: center;
+}
+
+.logo-img{
     width: 50%;
-    margin: 30vh auto;
+    height: auto;
+}
+footer{
+    background-color: rgb(29, 29, 29);
+    border:1px solid white;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;   
+}
+
+.footer-links a{
+    color: rgb(241, 211, 255);
+}
+
+
+section{
+    background-color: rgb(73, 73, 73, 0.8);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 1px solid red;
+}
+.form-fieldset{
+    background-color:rgb(29, 29, 29);
+}
+.form-div{
+    width: 40%;
 }
 
 .form-content{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .form-text{
-    width: 40%;
+    width: 50%;
     margin-top: 5%;
 }
 .form-input{
     width: 40%;
     margin-top: 5%;
 }
+.form-input input{
+    width: 100%;
+}
 
 .form-button{
     text-align: center;
-    margin: 5% auto;
+    margin: 5%;
 }
 
 .form-button button{
     margin-left: 5%;
+}
+
+.form-link{
+    text-align: center;
+}
+
+.form-link a{
+    display: inline;   
+    color: rgb(241, 211, 255);
+    text-decoration: none;
+}
+
+.form-link a:hover{
+    background-color: rgb(241, 211, 255,0.8);
+    color: rgb(29, 29, 29);
+    border-radius: 10px;
+    padding:5px;
+}
+
+@media (max-width: 768px){
+    .form-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-text{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .form-input{
+        width: 80%;
+        margin-top: 5%;
+    }
+    
+    .form-button{
+        text-align: center;
+        margin: 5%;
+    }
+    
+    .form-button button{
+
+        margin: 5%;
+    }
+    
+    .form-link{
+        text-align: center;
+    }
+    
 }
