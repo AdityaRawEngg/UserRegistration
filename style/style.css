@@ -1,4 +1,4 @@
-body{
+body {
     background: url('../resource/image/background.jpg');
     color: rgb(241, 211, 255);
     background-size: cover;
@@ -8,7 +8,16 @@ body{
     padding: 0;
 }
 
-.nav-container{
+.hamburger-div {
+    display: none;
+}
+
+.hamburger-nav-bar {
+    display: none;
+}
+
+
+.nav-container {
     background-color: rgb(73, 73, 73);
     display: flex;
     flex-direction: row;
@@ -17,140 +26,203 @@ body{
     justify-content: space-between;
 
 }
-.nav-bar{
+
+.nav-bar {
     width: 80%;
     display: flex;
     justify-content: right;
 
 }
-.nav-item{
+
+.nav-item {
     display: inline;
     margin-right: 20px;
 }
 
-.nav-link{
-    color:  white;
+.nav-link {
+    color: white;
     background-color: transparent;
     text-decoration: none;
-    
-  }
 
-.nav-link:hover{
+}
+
+.nav-link:hover {
     border-bottom: 1px solid rgb(241, 211, 255);
 }
-.logo{
-    width: 8%;
+
+.logo {
+    width: 80px;
+    height: 50px;
     text-align: center;
 }
 
-.logo-img{
+.logo-img {
     width: 50%;
-    height: auto;
+    height: 100%;
 }
-footer{
+
+footer {
     background-color: rgb(29, 29, 29);
-    border:1px solid white;
+    border: 1px solid white;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1%;   
+    margin: 1%;
 }
 
-.footer-links a{
+.footer-links a {
     color: rgb(241, 211, 255);
 }
 
 
-section{
+section {
     background-color: rgb(73, 73, 73, 0.8);
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.box{
+
+.box {
     border: 1px solid red;
 }
-.form-fieldset{
-    background-color:rgb(29, 29, 29);
+
+.form-fieldset {
+    background-color: rgb(29, 29, 29);
 }
-.form-div{
+
+.form-div {
     width: 40%;
 }
 
-.form-content{
+.form-content {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.form-text{
+.form-text {
     width: 50%;
     margin-top: 5%;
 }
-.form-input{
+
+.form-input {
     width: 40%;
     margin-top: 5%;
 }
-.form-input input{
+
+.form-input input {
     width: 100%;
 }
 
-.form-button{
+.form-button {
     text-align: center;
     margin: 5%;
 }
 
-.form-button button{
+.form-button button {
     margin-left: 5%;
 }
 
-.form-link{
+.form-link {
     text-align: center;
 }
 
-.form-link a{
-    display: inline;   
+.form-link a {
+    display: inline;
     color: rgb(241, 211, 255);
     text-decoration: none;
 }
 
-.form-link a:hover{
-    background-color: rgb(241, 211, 255,0.8);
+.form-link a:hover {
+    background-color: rgb(241, 211, 255, 0.8);
     color: rgb(29, 29, 29);
     border-radius: 10px;
-    padding:5px;
+    padding: 5px;
 }
 
-@media (max-width: 768px){
-    .form-content{
+@media (max-width: 768px) {
+    .form-content {
         flex-direction: column;
         align-items: center;
     }
-    
-    .form-text{
+
+    .form-text {
         width: 100%;
         margin-top: 5%;
     }
-    .form-input{
+
+    .form-input {
         width: 80%;
         margin-top: 5%;
     }
-    
-    .form-button{
+
+    .form-button {
         text-align: center;
         margin: 5%;
     }
-    
-    .form-button button{
+
+    .form-button button {
 
         margin: 5%;
     }
-    
-    .form-link{
+
+    .form-link {
         text-align: center;
     }
-    
+
+    .nav-bar {
+        display: none;
+    }
+
+    .hamburger-div {
+        display: block;
+    }
+
+    .hamburger-div:hover .hamburger-nav-bar {
+        display: block;
+    }
+
+    .hamburger {
+        margin-right: 2%;
+        border: 1px solid white;
+        height: 50px;
+        width: 50px;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+
+    .hamburger-lines {
+        width: 80%;
+        border: 1px solid white;
+    }
+
+    .hamburger-div:hover .hamburger-lines {
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+
+    }
+
+    .hamburger-div:hover .line1 {
+        transform: rotate(45deg);
+    }
+
+    .hamburger-div:hover .line3 {
+        transform: rotate(-45deg);
+    }
+
+    .hamburger-div:hover .line2 {
+        display: none;
+    }
+
+
 }
