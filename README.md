@@ -1,5 +1,5 @@
 # UserRegistration
-This is a Registration form for an online certification course.
+This is web page is for Login form.
 
 In Registration form user can add:
 
@@ -8,7 +8,8 @@ In Registration form user can add:
   * Number of Courses user wants to apply
   * Batch in which he wants to join
   
-Demo of The Project https://adityarawengg.github.io/UserRegistration/ 
+# Live Demo:
+For Demo of The Project https://adityarawengg.github.io/UserRegistration/ 
 
 
 
